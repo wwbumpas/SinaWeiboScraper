@@ -7,3 +7,5 @@ The other big difference is that instead of a CSV containing the plaintext of al
 I got around API blocking by setting a very generous time delay in between each new query. With this setup, it will usually run for several hours nonstop without any problems. After a while, it will throw up a screen asking you to enter a CAPTCHA. If you can enter it fast enough (i.e., in the 10-20 seconds before the script makes the page reload), the script will continue as normal. So, it does take some babysitting, but it's still much better than doing it by hand—I typically just let it run while I worked on something else. 
  
 After a few CAPTCHAs, you'll get a different kind of challenge prompt, asking you for a phone number for text verification. This is where I threw up my hands and just made new accounts. I had 3-4 unique Weibo accounts by the time all was said and done... 
+
+Finally, my version also has extensive commenting and print statements for easier debugging and monitoring.
