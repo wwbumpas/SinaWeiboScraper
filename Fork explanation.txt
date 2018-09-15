@@ -9,3 +9,4 @@ I got around API blocking by setting a very generous time delay in between each 
 After a few CAPTCHAs, you'll get a different kind of challenge prompt, asking you for a phone number for text verification. This is where I threw up my hands and just made new accounts. I had 3-4 unique Weibo accounts by the time all was said and done... 
 
 Finally, my version also has extensive commenting and print statements for easier debugging and monitoring.
+
