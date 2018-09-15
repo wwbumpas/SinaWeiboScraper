@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset204 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c100000;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\i\fs22 \cf0 \cb2 \expnd0\expndtw0\kerning0
+This is a (very heavily) modified version of {\field{\*\fldinst{HYPERLINK "https://github.com/Yhinner/SinaWeiboScraper"}}{\fldrslt \cf3 \ul \ulc3 yhinner's original}}\cf3 \ul \ulc3  script\cf0 \ulnone . The original script searches Weibo for a given keyword, date range, and number of pages to crawl. It also returns only the plain text of the post content, plus date of post and user. It's fine if you just want a sample of posts to do some qualitative analysis on.
+\i0 \
+
+\i  
+\i0 \
+
+\i In contrast, my version is designed to collect 
+\b \ul all
+\b0 \ulnone  the posts matching the keyword query within a date range\'97you may have noticed search results stop at 50 pages. Mine will check how many pages there are, and alert you if there are more than 50. That way you can keep making the date range smaller and smaller until you get under 50. At that point, the script will crawl every page in the search results, detect when it reaches the end, and move to the next query. In other words, if it's important for your research to have the 
+\b \ul complete
+\b0 \ulnone  record of activity within a certain time frame, my script will help with that.
+\i0 \
+
+\i  
+\i0 \
+
+\i The other big difference is that instead of a CSV containing the plaintext of all posts, it also saves each post as a separate JSON object containing a much larger amount of metadata. This was useful for my purposes, but again might not be relevant to your project.
+\i0 \
+
+\i  
+\i0 \
+
+\i I got around API blocking by setting a very generous time delay in between each new query. With this setup, it will usually run for several hours nonstop without any problems. After a while, it will throw up a screen asking you to enter a CAPTCHA. If you can enter it fast enough (i.e., in the 10-20 seconds before the script makes the page reload), the script will continue as normal. So, it does take some babysitting, but it's still much better than doing it by hand\'97I typically just let it run while I worked on something else. 
+\i0 \
+
+\i  
+\i0 \
+
+\i After a few CAPTCHAs, you'll get a different kind of challenge prompt, asking you for a phone number for text verification. This is where I threw up my hands and just made new accounts. I had 3-4 unique Weibo accounts by the time all was said and done... 
+\i0 \
+}
