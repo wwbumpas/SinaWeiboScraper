@@ -16,4 +16,4 @@
 
 6. Keep an eye on the terminal to follow along with its progress
 
-7. Your results will be saved in the /output/ folder with a separate JSON object for each query. If I recall correctly, it contains the full HTML for each post, so you'll have to parse these with beautifulsoup to get what you want from it. I did this with separate scripts, but my use case will be different from yours, since all I needed was the link and user id. Alternatively, you could back-borrow from Yhinner's original script to make it just export a CSV instead, but that's for you to figure out.
+7. Your results will be saved in the /output/ folder with a separate JSON object for each query. If I recall correctly, it contains the full HTML for each post, so you'll have to parse these with beautifulsoup to get what you want from it. I did this with separate scripts, which I plan to add in a separate repository soon.
